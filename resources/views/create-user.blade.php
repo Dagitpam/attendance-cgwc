@@ -5,7 +5,7 @@
     @push('head')
         <link rel="stylesheet" href="{{ asset('plugins/select2/dist/css/select2.min.css') }}">
     @endpush
-{{-- dddd --}}
+{{-- dddd ffff-- }}
 
     <div class="container-fluid">
     	<div class="page-header">
