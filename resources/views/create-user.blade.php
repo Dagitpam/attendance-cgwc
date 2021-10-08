@@ -1,12 +1,12 @@
-@extends('layouts.main') 
+@extends('layouts.main')
 @section('title', 'Add User')
 @section('content')
     <!-- push external head elements to head -->
     @push('head')
         <link rel="stylesheet" href="{{ asset('plugins/select2/dist/css/select2.min.css') }}">
     @endpush
+{{-- dddd --}}
 
-    
     <div class="container-fluid">
     	<div class="page-header">
             <div class="row align-items-end">
@@ -70,7 +70,7 @@
                                             </span>
                                         @enderror
                                     </div>
-                                   
+
                                     <div class="form-group">
                                         <label for="password">{{ __('Password')}}<span class="text-red">*</span></label>
                                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="Enter password" required>
@@ -87,11 +87,11 @@
                                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Retype password" required>
                                         <div class="help-block with-errors"></div>
                                     </div>
-                                    
-                                    
-                                    
-                                    
-                                
+
+
+
+
+
                                 </div>
                                 <div class="col-md-6">
                                     <!-- Assign role & view role permisions -->
@@ -113,7 +113,7 @@
                                     </div>
                                 </div>
                             </div>
-                        
+
                         </form>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
         </div>
     </div>
     <!-- push external js -->
-    @push('script') 
+    @push('script')
         <script src="{{ asset('plugins/select2/dist/js/select2.min.js') }}"></script>
          <!--get role wise permissiom ajax script-->
         <script src="{{ asset('js/get-role.js') }}"></script>
