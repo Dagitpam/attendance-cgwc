@@ -15,6 +15,7 @@ class Allocation extends Model
     protected $guarded = [];
     protected $with = ['state'];
     /**
+     * kkkk
      * Get the state that the allocation belongs to.
     */
     public function state()
